@@ -1,5 +1,6 @@
 import logo from './images/logo.svg';
 import './App.css';
+import CallRating from './UI-kit/calll-rating';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <CallRating grade='GREAT'/>
     </div>
   );
 }
