@@ -1,6 +1,11 @@
 import logo from './images/logo.svg';
 import './App.css';
-import CallRating from './UI-kit/calll-rating';
+import CallRating from './UI-kit/call-rating/calll-rating';
+import CallStatus from './UI-kit/call-status/call-status';
+import { callStatuses } from './utils/call-statuses';
+import { callRatings } from './utils/call-ratings';
+
+
 
 function App() {
   return (
@@ -19,7 +24,8 @@ function App() {
           Learn React
         </a>
       </header>
-      <CallRating grade='GREAT'/>
+      <CallRating grade={callRatings.BAD} />
+      <CallStatus status={callStatuses.INCOMING} />
     </div>
   );
 }
